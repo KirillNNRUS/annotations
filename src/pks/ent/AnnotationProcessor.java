@@ -13,7 +13,7 @@ public class AnnotationProcessor {
         if (service.isAnnotationPresent(Service.class)) {
             getAnn(Service.class);
         } else {
-            sorry();
+            StaticMethods.sorry();
         }
     }
 
@@ -22,7 +22,4 @@ public class AnnotationProcessor {
         System.out.println(ann.name());
     }
 
-    static void sorry() {
-        System.out.println("Sorry");
-    }
 }
