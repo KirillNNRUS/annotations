@@ -11,7 +11,7 @@ public class AnnotationProcessor {
 
     static void inspectService(Class<?> service) {
         if (service.isAnnotationPresent(Service.class)) {
-            getAnn(Service.class);
+            getAnn(service);
         } else {
             StaticMethods.sorry();
         }
